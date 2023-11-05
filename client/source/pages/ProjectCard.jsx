@@ -1,9 +1,9 @@
-import React from 'react'
-import { SendInvite } from '../components/FindProject/SendInvite';
+import React from 'react';
+import { BecomePartner } from '../components/BecomePartner';
+import { SendInvite } from '../components/Features/FindProject/SendInvite';
 import { useGetProjectById } from '../services/api/projectsAPI';
 import { useModalStore } from '../stores/modal';
 import { useUserStore } from '../stores/user';
-import { BecomePartner } from '../components/BecomePartner';
 
 export const ProjectCard = ({ id }) => {
   const { data: project } = useGetProjectById(id)

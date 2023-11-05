@@ -1,13 +1,13 @@
-import React, { useState, useEffect, Fragment } from 'react';
-import { Banner } from '../components/FindProject/Banner';
-import { Search } from '../components/FindProject/Search';
-import { useGetProjects } from '../services/api/projectsAPI';
+import React, { Fragment, useEffect, useState } from 'react';
 import Autocomplete from "react-google-autocomplete";
-import { ProjectCard } from './ProjectCard';
+import { Banner } from '../components/Features/FindProject/Banner';
+import { Search } from '../components/Features/FindProject/Search';
+import { useGetProjects } from '../services/api/projectsAPI';
 import { useGetScienceBranch, useSearchScienceBranch } from '../services/api/scienceBranchAPI';
+import { ProjectCard } from './ProjectCard';
 
-import { Combobox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import { Combobox, Transition } from '@headlessui/react';
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
 
 export const FindProject = () => {
   const [filters, setFilters] = useState({})

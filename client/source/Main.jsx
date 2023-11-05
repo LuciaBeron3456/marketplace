@@ -10,7 +10,7 @@ import { Application } from './routes/Application'
 
 import './styles/tailwind.css'
 
-import { Modal } from './components/Modal'
+import { Modal } from './containers/Modal'
 
 import { Notification } from './components/Notification'
 

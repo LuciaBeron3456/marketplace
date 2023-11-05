@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useCreateInvitation } from '../../services/api/invitationsAPI';
-import { useModalStore } from '../../stores/modal';
-import { useNotificationStore } from '../../stores/notification';
+import { useCreateInvitation } from '../../../services/api/invitationsAPI';
+import { useModalStore } from '../../../stores/modal';
+import { useNotificationStore } from '../../../stores/notification';
 
 export const SendInvite = ({ projectId, userId }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
